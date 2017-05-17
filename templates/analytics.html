@@ -1,7 +1,5 @@
 <center><h1>Analytics</h1></center>
-<div ng-controller="LineCtrl as line">
-    <canvas data-sys-chart-line
-            data-dataset="line.data"
-            width="400"
-            height="240"></canvas>
-</div>
+<canvas id="line" class="chart chart-line" chart-data="data"
+chart-labels="labels" chart-series="series" chart-options="options"
+chart-dataset-override="datasetOverride" chart-click="onClick">
+</canvas
