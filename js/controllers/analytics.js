@@ -27,7 +27,7 @@ angular.module("appModule")
 			          display: true,
 			          position: 'right'
 			        }
-			      ]
+			      ]	
 			    }
 		};
 	});
