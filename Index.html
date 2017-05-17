@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+	<title>Test Leonardo</title>
+	<!-- css dependencies-->
+	<link rel="stylesheet" type="text/css" href="styles/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+	<!--Angular dependencies-->
+	<script src="Dependencies/angular/angular.js"></script>
+	<script src="Dependencies/angular/angular-route.js"></script>
+	
+	<!--chart dependencies-->
+	<script src="Dependencies/bower_components/chart/src/chart.js"></script>
+	<script src="Dependencies/bower_components/angular-chart/angular-chart.js"></script>
+
+	<!-- scripst -->
+	<script src="js/controllers/app.js"></script>
+	<script src="js/controllers/Routes.js"></script>
+	<script src="js/controllers/slideMenu.js"></script>
+	
+
+
+</head>
+<body>
+<div class="header" ng-controller="slideMenu">
+<div class="containerlogo" ng-click="openNav()">
+	<div class="logo"><img src="assets/images/icons/r-3-l-logo-application-02.png" width="264px" height="60px"></div>
+</div>
+	<div class="container-list">
+		<ul id="button">
+		<li>name Admin</li>
+	</ul>	
+	</div>
+</div>
+<div id="mySidenav" class="sidenav" ng-controller="slideMenu">
+  <a href="#Analytics"  ng-click="closeNav()">Analytics</a>
+  <a href="#news"  ng-click="closeNav()">News</a>
+  <br>
+  <br>
+  <a href="javascript:void(0)" ng-click="closeNav()"> Close Menu</a>
+</div>
+	<div ng-view class="container"></div>
+</body>
+</html>
